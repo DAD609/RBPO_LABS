@@ -1,3 +1,0 @@
-C:/Users/dzhen/CLionProjects/LAB1_FINAL/cmake-build-debug/CMakeFiles/Main-task2.cpp.dir
-C:/Users/dzhen/CLionProjects/LAB1_FINAL/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dzhen/CLionProjects/LAB1_FINAL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
