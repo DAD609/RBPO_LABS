@@ -116,6 +116,12 @@ export Complex operator*(const Complex& lhs, const Complex& rhs)
 	double im = lhs.m_re * rhs.m_im + lhs.m_im * rhs.m_re;
 	return Complex(real, im);
 }
+export Complex exxp(const Complex& z) {
+	Complex res = z;
+
+	res = 1 - z;//функция экспоненты для малых чисел 
+	return res;
+}
 
 export Complex operator/(const Complex& lhs, const Complex& rhs)
 {
@@ -132,6 +138,7 @@ export Complex operator ""i(unsigned long long im) {
 export Complex operator ""i(long double im) {
 	return Complex(0.0, static_cast<double>(im));
 }
+
 export std::ostream& operator<<(std::ostream& stream, const Complex& instance) {
 	if (instance.m_im < 0) {
 		stream << instance.m_re << " " << instance.m_im << "i";
@@ -235,6 +242,8 @@ public:
 		normalize();
 		return *this;
 	}
+	
+
 	Rational& operator-=(Rational a) {
 		int new_d = FindGreatestCommonDivisor(m_denominaotor, a.m_denominaotor);
 		m_nominator = new_d / m_denominaotor * m_nominator;
@@ -265,6 +274,8 @@ public:
 	friend bool operator>=(const Rational& lhs, const Rational& rhs);
 	friend bool operator<=(const Rational& lhs, const Rational& rhs);
 	friend std::ostream& operator<<(std::ostream& stream, const Rational& instance);
+	
+
 };
 
 export Rational operator+ (const Rational& lhs, const Rational& rhs) {
@@ -285,6 +296,12 @@ export Rational operator-(const Rational& lhs, const Rational& rhs)
 export Rational operator*(const Rational& lhs, const Rational& rhs)
 {
 	return Rational{ lhs.m_nominator * rhs.m_nominator, rhs.m_denominaotor * lhs.m_denominaotor };
+}
+export Rational exxp(const Rational& r) {
+	Rational res = r;
+
+	res = 1 - r ;//функция экспоненты для малых чисел 
+	return res;
 }
 
 export Rational operator/(const Rational& lhs, const Rational& rhs)
@@ -324,12 +341,12 @@ export std::ostream& operator<<(std::ostream& stream, const Rational& instance) 
 }
 
 export Complex f(const Complex& z) {
-	Complex result = 2 + 3 * 0.5 * 1;
+	Complex result = 2 + 3 * 0.5 * exxp(z);
 	return result;
 }
 
 export Rational f(const Rational& r) {
-	Rational result = 2 + 3 * 0.5 * 1;
+	Rational result = 2 + 3 * 0.5 * exxp(r);
 	return result;
 }
 
