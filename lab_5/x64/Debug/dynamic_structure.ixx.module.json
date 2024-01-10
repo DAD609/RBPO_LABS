@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\dynamic_structure.ixx.obj",
+            "outputs": [
+                "C:\\Users\\dzhen\\Downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\dzhen\\Downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\x64\\Debug\\dynamic_structure.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "dynamic_structure",
+                    "source-path": "c:\\users\\dzhen\\downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\dynamic_structure.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "dynamic_structure:AbstractClass"
+                },
+                {
+                    "logical-name": "dynamic_structure:StackBasedOnArray"
+                },
+                {
+                    "logical-name": "dynamic_structure:StackBasedOnUnidirectionalLinkedList"
+                }
+            ]
+        }
+    ]
+}

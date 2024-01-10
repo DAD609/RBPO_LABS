@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\dzhen\\downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\dynamic_structure.ixx",
+        "ProvidedModule": "dynamic_structure",
+        "Includes": [],
+        "ImportedModules": [
+            {
+                "Name": "dynamic_structure:AbstractClass",
+                "BMI": "C:\\Users\\dzhen\\Downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\x64\\Debug\\AbstractClass.ixx.ifc"
+            },
+            {
+                "Name": "dynamic_structure:StackBasedOnArray",
+                "BMI": "C:\\Users\\dzhen\\Downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\x64\\Debug\\StackBasedOnArray.ixx.ifc"
+            },
+            {
+                "Name": "dynamic_structure:StackBasedOnUnidirectionalLinkedList",
+                "BMI": "C:\\Users\\dzhen\\Downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\x64\\Debug\\StackBasedOnUnidirectionalLinkedList.ixx.ifc"
+            }
+        ],
+        "ImportedHeaderUnits": []
+    }
+}

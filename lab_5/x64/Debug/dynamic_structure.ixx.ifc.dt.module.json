@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\dzhen\\downloads\\rbpo_labs-main (3)\\rbpo_labs-main\\lab_5\\dynamic_structure.ixx",
+        "ProvidedModule": "dynamic_structure",
+        "ImportedModules": [
+            "dynamic_structure:AbstractClass",
+            "dynamic_structure:StackBasedOnArray",
+            "dynamic_structure:StackBasedOnUnidirectionalLinkedList"
+        ],
+        "ImportedHeaderUnits": []
+    }
+}
